@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.class{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #eff4fd;
+}
+
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 20px 10px;
+    font-size: x-large;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: red;
+}
+
+/* het bovenstaande gedeelte is voor de bovekant van de page */
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .iconen {
+    width: 33%;
+  }
+  
+  .iconen img {
+    max-width: 100%;
+    height: auto;
+    
+  }
+  .iconen.email img {
+    width: 350px;
+    height: 350px;
+ }
+ .iconen.discord img {
+    width: 350px;
+    height: 300px;
+    margin-left: 30px;
+ }
+
+ 
+@media only screen and (max-width: 480px) {
+
+    nav {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .iconen {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .iconen.email img {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .iconen.discord img {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+}
+
+
+  
+  
+  
+
